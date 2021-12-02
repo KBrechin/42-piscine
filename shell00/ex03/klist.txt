@@ -1,0 +1,5 @@
+Credentials cache: API:4BFE0901-E992-40D1-AE54-12EF733A5CD5
+        Principal: kbrechin@42ADEL.ORG.AU
+
+  Issued                Expires               Principal
+Nov 23 13:18:16 2021  Nov 23 23:18:16 2021  krbtgt/42ADEL.ORG.AU@
