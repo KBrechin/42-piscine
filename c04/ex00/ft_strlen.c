@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbrechin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/12 16:49:05 by kbrechin          #+#    #+#             */
-/*   Updated: 2021/12/14 15:53:26 by kbrechin         ###   ########.fr       */
+/*   Created: 2021/12/14 19:58:45 by kbrechin          #+#    #+#             */
+/*   Updated: 2021/12/14 19:58:53 by kbrechin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-void	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
-	int	c;
+	int		i;
 
-	c = 0;
-	while (str[c])
+	i = 0;
+	while (str[i] != '\0')
 	{
-		write (1, &str[c], 1);
-		c++;
-	}	
+		i++;
+	}
+	return (i);
 }
 /*
+#include <stdio.h>
 int main()
 {
-	ft_putstr("yo mama!");
+	int len = ft_strlen("sugma");
+	printf("%d\n", len);
 }
 */
